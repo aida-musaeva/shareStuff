@@ -1,0 +1,34 @@
+
+Best way to create and link репозитории:
+create repos on GitHub, add .gitignore (чтобы всякое ненужное от среды программирования отсеялось)
+gitBash:
+	$ git clone ~link~
+ 	!$ cd ~directory~
+add файлы in directory
+ 	$ git add -A  //add all файлы in отслеживание
+ 	$ git commit -m "your comments about commit" // фикс changes
+ 	% git push ~name remote repos(на ноуте, по дефолту origin)~ ~name branch(master)~  //пуш на гитхаб
+~~после любого изменения на ноуте повторять вышестоящий алгоритм~~
+если были changes на гитхабе и нужно синхронизировать с local repos на ноуте:
+ 	$ git pull ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
+
+Another way (local -> remote):
+	$ mkdir ~directory~ //create folder
+	$ cd ~directory~
+add файлы in directory	
+	$ git init
+	$ git remote add origin ~link~ //связываем local repos с remote repos, origin - имя remote repos
+	$ git add -A  //add all файлы in отслеживание
+ 	$ git commit -m "your comments about commit" // фикс changes
+	$ git push ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
+	$ git pull ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
+
+Некоторые commands:
+	$ git log - чтобы check commits
+	$ git remote -v //check name and link, по дефолту origin и твой линк на репозиторий гитхаба
+ 	$ git status //check changes
+Ветвление:
+ 	$ git branch ~name~ //создание ветки (копии master)
+ 	$ git branch //show branches (активная помечена *)
+ 	$ git checkout ~name~ //переключение на ветку name
+ 	
