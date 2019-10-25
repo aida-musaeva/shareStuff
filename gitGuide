@@ -2,7 +2,7 @@ Best way to create and link репозитории:
 create repos on GitHub, add .gitignore (чтобы всякое ненужное от среды программирования отсеялось)
 gitBash:
 	$ git clone ~link~
- 	!$ cd ~directory~
+ 	$ cd ~directory~
 add файлы in directory
  	$ git add -A  //add all файлы in отслеживание
  	$ git commit -m "your comments about commit" // фикс changes
