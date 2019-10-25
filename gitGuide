@@ -32,10 +32,13 @@ add файлы in directory
  	$ git branch ~name~ //создание ветки (копии master)
  	$ git branch //show branches (активная помечена *)
  	$ git checkout ~name~ //переключение на ветку name
- если закоммитить изменения в ветку ~name~ и переключиться на master, то в файловой системе изменения не появятся. Чтобы они появились, объединенияем ветки:
+ если закоммитить изменения в ветку ~name~ и переключиться на master, то в файловой системе изменения не появятся. 
+ Чтобы они появились, объединенияем ветки:
  	$ git merge ~name~ -m "your comments"//примененяем изменения из ветки name к основной версии и коммитим
  	$ git branch -d ~name~ //для удаления ветки
  	$ git fetch ~remote repos name~ ~branch name~ //pull с remote repos только без слияния веток (fetch+merge = pull)
  
 Возвращение файла к состоянию на момент определенного коммита:
  	$ git checkout ~первые символы идентификатора коммита~ ~filename~
+	$ git commit --amend //fix last commit
+	$ git revert ~первые цифры id коммита(last commit - HEAD)~ // create commit that delete changes in ~name~ commit
