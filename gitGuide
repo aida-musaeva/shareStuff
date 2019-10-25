@@ -39,6 +39,6 @@ add файлы in directory
  	$ git fetch ~remote repos name~ ~branch name~ //pull с remote repos только без слияния веток (fetch+merge = pull)
  
 Возвращение файла к состоянию на момент определенного коммита:
- 	$ git checkout ~первые символы идентификатора коммита~ ~filename~
+ 	$ git checkout ~commitID~ ~filename~
 	$ git commit --amend //fix last commit
 	$ git revert ~первые цифры id коммита(last commit - HEAD)~ // create commit that delete changes in ~name~ commit
