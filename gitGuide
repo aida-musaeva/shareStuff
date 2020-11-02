@@ -3,18 +3,18 @@ create repos on GitHub, add .gitignore (чтобы всякое ненужное
 gitBash:
 	$ git clone ~link~
  	$ cd ~directory~
-add файлы in directory
+add files in directory
  	$ git add -A  //add all файлы in отслеживание
  	$ git commit -m "your comments about commit" // фикс changes
  	% git push ~name remote repos(на ноуте, по дефолту origin)~ ~name branch(master)~  //пуш на гитхаб
 ~~после любого изменения на ноуте повторять вышестоящий алгоритм~~
-если были changes на гитхабе и нужно синхронизировать с local repos на ноуте:
+если были изменения на гитхабе и нужно синхронизировать с local repos на ноуте:
  	$ git pull ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
 
 Another way (local -> remote):
 	$ mkdir ~directory~ //create folder
 	$ cd ~directory~
-add файлы in directory	
+add files in directory	
 	$ git init
 	$ git remote add origin ~link~ //связываем local repos с remote repos, origin - имя remote repos
 	$ git add -A  //add all файлы in отслеживание
@@ -22,7 +22,7 @@ add файлы in directory
 	$ git push ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
 	$ git pull ~name remote repos (на ноуте, по дефолту origin)~ ~name branch(по дефолту master)~  
 
-Некоторые commands:
+Some commands:
 	$ git log - чтобы check commits
 	$ git show ~первые символы идентификатора коммита~ // показывает, что появилось нового в коммите
 	$ git diff ~первые символы идентификатора коммита1~..~первые символы идентификатора коммита2~ //показывает разницу коммитов
