@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>реп-туториал</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<h1>gitGuide</h1>
+					<p>By Aida</p>
+				</header>
+				<footer>
+					<a href="#banner" class="button style2 scrolly-middle">Scroll2know</a>
+				</footer>
+			</section>
+
+		
+
+		<!-- Block 1 -->
+			<article class="container box style2">
+				<header>
+					<h2>Ритмические конструкции</h2>
+					<p>create repos on GitHub, add .gitignore<br />$ cd ~directory~
+<br />add files in directory
+ 	<br />$ git add -A
+ 	<br />$ git commit -m "your comments about commit"
+ 	<br />$ git push ~remoteReposName~ ~branchName~ 
+ 	<br />$ git pull ~remoteReposName~ ~branchName~  </p>
+				</header>
+				
+
+		<!-- Block 2 -->
+			<article class="container box style2">
+				<header>
+					<h2>Another way (local -> remote)</h2>
+					<p>$ mkdir ~directory~ //create folder<br />$ cd ~directory~
+<br />add files in directory<br />$ git init<br />$ git remote add origin ~link~ //связываем local repos с remote repos<br />$ git add -A
+ 	<br />$ git commit -m "your comments about commit"
+ 	<br />$ git push ~remoteReposName~ ~branchName~ 
+ 	<br />$ git pull ~remoteReposName~ ~branchName~  </p>
+				</header>
+		<!-- Block 3 -->
+			<article class="container box style2">
+				<header>
+					<h2>Некоторые commands</h2>
+					<p>$ git log - чтобы check commits<br />
+	$ git show ~первые символы идентификатора коммита~ // показывает, что появилось нового в коммите<br />
+	$ git diff ~commit1~..~commit2~ //показывает разницу коммитов<br />
+	$ git remote -v //check name remote repos and link<br />
+ 	$ git status //check changes</p>
+				</header>			
+		<!-- Block 4 -->
+			<article class="container box style2">
+				<header>
+					<h2>Ветвление</h2>
+					<p>$ git branch ~name~ //создание ветки (копии master)<br />
+ 	$ git branch //show branches (активная помечена *)<br />
+ 	$ git checkout ~name~ //переключение на ветку name<br />
+ Если закоммитить изменения в ветку ~name~ и переключиться на master, то в файловой системе изменения не появятся.<br /> Чтобы они появились, объединенияем ветки:<br />
+ 	$ git merge ~name~ -m "your comments"//примененяем изменения из ветки name к основной версии и коммитим<br />
+ 	$ git branch -d ~name~ //для удаления ветки<br />
+ 	$ git fetch ~remote repos name~ ~branch name~ //pull без слияния(fetch+merge = pull)<br />
+ </p>
+				</header>		
+		<!-- Block 5 -->
+			<article class="container box style2">
+				<header>
+					<h2>Действия с коммитами</h2>
+					<p>$ git checkout ~первые символы идентификатора коммита~ ~filename~<br />
+	$ git commit --amend //fix last commit<br />
+	$ git revert ~первые цифры id коммита(last commit - HEAD)~ // create commit that delete changes in ~name~ commit</p><br />
+				</header>		
+
+		<section id="footer">
+			<ul class="icons">
+
+			</ul>
+		</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
